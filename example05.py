@@ -1,0 +1,30 @@
+from linked_list import LinkedList
+
+lista = LinkedList()
+print()
+lista.append(1)
+lista.append(2)
+lista.append(3)
+
+for val in lista.iter():
+    print(val)
+
+print(f'Size: {lista.size}')
+print(f'Head: {lista.head.valor}')
+print(f'Tail: {lista.tail.valor}')
+print(f'Head.next: {lista.head.siguiente.valor}')
+print()
+print(lista.search(2))
+print(lista.search(4))
+print(lista.delete(2))
+print()
+print(f'Size: {lista.size}')
+print(f'Head: {lista.head.valor}')
+print(f'Tail: {lista.tail.valor}')
+print(f'Head.next: {lista.head.siguiente.valor}')
+print()
+lista.clear()
+print("Lista vaciada")
+print(f'Size: {lista.size}')
+print(f'Head: {lista.head}')
+print(f'Tail: {lista.tail}')
